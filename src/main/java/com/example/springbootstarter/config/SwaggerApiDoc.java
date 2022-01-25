@@ -22,7 +22,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.ServletContext;
 import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -85,7 +84,7 @@ public class SwaggerApiDoc extends WebMvcConfigurationSupport {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("Spring starter API").description("APIs Documentation")
-                .termsOfServiceUrl("https://github.com/divinirakiza/spring-starter")
+                .termsOfServiceUrl("https://github.com/MikeManzi/springboot-mysql-starter")
                 .version("1.0").build();
     }
 }
