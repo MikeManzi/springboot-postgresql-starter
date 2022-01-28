@@ -3,6 +3,7 @@ package com.example.springbootstarter.dtos;
 import com.example.springbootstarter.enums.EGender;
 import com.example.springbootstarter.enums.ERole;
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

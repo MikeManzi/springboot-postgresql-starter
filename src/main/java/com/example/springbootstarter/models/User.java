@@ -29,7 +29,7 @@ public class User extends TimestampAudit {
     private UUID id;
 
 
-    @NotBlank
+    @NotBlank(message = "Email is required")
     @Column(name="email")
     private String email;
 
@@ -43,12 +43,12 @@ public class User extends TimestampAudit {
     private String mobile;
 
     @JsonIgnore
-    @NotBlank
+    @NotBlank(message = "Password is required")
     @Column(name="password")
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Column(name="gendder")
+    @Column(name="gender")
     private EGender gender;
 
     @Enumerated(EnumType.STRING)
